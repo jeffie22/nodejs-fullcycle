@@ -29,7 +29,7 @@ services:
       tty: true
       depends_on:
       - mysql
-      
+
   nginx:
     build:
       context: nginx
@@ -39,7 +39,7 @@ services:
       - mynet
     tty: true
     ports:
-      - "3000:80"  
+      - "8080:80"  
     depends_on:
       - node-app    
 
