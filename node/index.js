@@ -10,8 +10,6 @@ const connectionConfig = {
     database: "node",
 };
 
-let $allpeople = [];
-
 const connection = mysql.createConnection(connectionConfig);
 
 connection.connect(function (err) {
